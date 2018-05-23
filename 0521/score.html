@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>成績判斷</h1>
+
+<p>
+    <input type="number" id="grade">    
+    <button type="button"onclick="button()">送出</button>
+</p>
+
+<p id="demo"></p>
+
+<script>
+    function button() {
+        grade = document.getElementById("grade").value;
+        if(grade>=60){
+            result="非常好"
+        }else{
+            result="不及格"
+        }
+        document.getElementById("demo").innerHTML =result;
+    }
+</script>
+
+</body>
+</html>
